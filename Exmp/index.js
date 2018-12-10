@@ -1,8 +1,9 @@
 
-$('body')[0].addEventListener('click', removeElement, true);
+$('html')[0].addEventListener('click', removeElement, true);
 
 function removeElement(event) {
   event.preventDefault();
+  event.stopPropagation();
   console.log(event.target);
   event.target.style.display = 'none';
   let parents = $(event.target).parents();
