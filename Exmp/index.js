@@ -21,6 +21,7 @@ function removeElement(event) {
 //   hide(t3);
 // });
 
+
 function hide(path) {
   let paths = path.split(',');
   let tags = paths[0];
